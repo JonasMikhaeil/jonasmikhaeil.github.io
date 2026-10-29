@@ -61,6 +61,9 @@ h2 { font: normal 1.875rem/1.2 var(--serif); }
 .teaching-note { color: var(--muted); max-width: 740px; margin-top: 23px; }
 footer { border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 20px; padding: 22px 0 32px; font-size: .875rem; color: var(--muted); }
 footer a { text-decoration: none; }
+@media screen and (min-width: 761px) {
+  .biography { align-self: center; }
+}
 @media (max-width: 760px) {
   .page { padding: 0 24px; }
   .site-header { align-items: flex-start; flex-direction: column; gap: 15px; padding: 22px 0; }
