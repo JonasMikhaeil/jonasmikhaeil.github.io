@@ -19,12 +19,11 @@ p, h1, h2, h3, h4 { margin: 0; }
 .skip-link:focus { top: 10px; }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 27px 0; border-bottom: 1px solid var(--line); }
 .site-name { font: 1.15rem var(--serif); text-decoration: none; color: var(--ink); }
+.site-name a { color: inherit; text-decoration: none; }
 .header-affiliation { margin-top: 5px; font-size: .875rem; line-height: 1.5; color: var(--muted); }
 nav { display: flex; gap: 28px; flex-wrap: wrap; }
 nav a { font-size: .9375rem; text-decoration: none; color: var(--muted); }
-.intro { display: grid; grid-template-columns: minmax(0, 1fr) 250px; grid-template-rows: min-content 1fr; grid-template-areas: "identity portrait" "biography portrait"; gap: 24px 52px; align-items: start; padding: 54px 0 56px; }
-.identity { grid-area: identity; }
-h1 { font: normal 2.75rem/1.15 var(--serif); letter-spacing: -.025em; }
+.intro { display: grid; grid-template-columns: minmax(0, 1fr) 250px; grid-template-rows: auto; grid-template-areas: "biography portrait"; gap: 24px 52px; align-items: start; padding: 54px 0 56px; }
 .profile { grid-area: portrait; margin-top: 5px; }
 .portrait { position: relative; width: 100%; aspect-ratio: 4 / 5; overflow: hidden; margin: 0; border-radius: 2px; background: #eef1f3; }
 .contact-box { margin-top: 16px; padding: 16px 18px; border: 1px solid var(--line); background: #f6f8fa; font-size: .875rem; line-height: 1.6; }
@@ -66,8 +65,7 @@ footer a { text-decoration: none; }
   .page { padding: 0 24px; }
   .site-header { align-items: flex-start; flex-direction: column; gap: 15px; padding: 22px 0; }
   nav { gap: 24px; }
-  .intro { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "identity" "portrait" "biography"; gap: 25px; padding: 35px 0 42px; }
-  h1 { font-size: 2.5rem; }
+  .intro { grid-template-columns: 1fr; grid-template-rows: auto; grid-template-areas: "portrait" "biography"; gap: 25px; padding: 35px 0 42px; }
   .profile { width: min(100%, 240px); margin-top: 0; }
   .section-heading { flex-direction: column; gap: 9px; }
   .teaching-row { flex-direction: column; gap: 2px; }
